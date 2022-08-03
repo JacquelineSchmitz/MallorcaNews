@@ -15,14 +15,14 @@ class DetailFragment : Fragment() {
     private lateinit var binding: FragmentDetailBinding
     private val viewModel: MainViewModel by activityViewModels()
     private var newsId = 0
-    private var newsStory = ""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         arguments?.let {
             newsId = it.getInt("newsId")
-            newsStory = it.getString("story").toString()
+
         }
     }
 
